@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 .app--container{
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
+
 }
 
 .app--todos input,button{
@@ -29,12 +31,14 @@ button:hover{
     cursor: pointer;
     background-color: white;
     border:1px solid gold;
-    color:gold
+    color:gold;
+    transition: 0.3s;
 }
 
 .app--todos-task button,h4{
-    padding: 5px;
+    padding: 8px;
     margin: 8px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .app--todos-task h4{
@@ -57,4 +61,22 @@ button:hover{
 }
 .app--todos-task h4{
     padding-left: 10px;
+}
+
+.app--delete-btn{
+    background-color:red;
+    outline: none;
+    border: 1px solid white;
+    padding: 8px;
+    width:420px;
+    color:white;
+    transition: 0.4s;
+}
+.app--delete-btn:hover{
+    background-color:white;
+    outline: none;
+    border: 1px solid red;
+    padding: 8px;
+    width:420px;
+    color:red
 }

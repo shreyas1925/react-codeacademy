@@ -11,8 +11,11 @@ const Counter = () => {
             {count}
         </div>
         <div className="app--counter-btns">
-          <Button styles="btn--increment" setCount={setCount} count={count} type="inc" name="Increment"/>
-          <Button styles="btn--decrement" setCount={setCount} count={count} type="dec" name="Decrement"/>
+          <div>
+            <Button styles="btn--increment" setCount={setCount} count={count} type="inc" name="Increment"/>
+            <Button styles="btn--decrement" setCount={setCount} count={count} type="dec" name="Decrement"/>
+            <Button styles="btn--reset" setCount={setCount} count={count} type="res" name="Reset"/>
+          </div>
         </div>
       </div>
     </div>

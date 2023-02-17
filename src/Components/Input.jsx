@@ -1,10 +1,17 @@
 import React from 'react'
 
-const Input = ({data,setData,handleInput}) => {
+const Input = ({data,handleChange,handleSubmit,isToggle}) => {
   return (
     <div className="app--todos">
-        <input type="text" value={data} onChange={(e) => setData(e.target.value)}/>
-        <button onClick={handleInput}>Add Item</button>
+        <input value={data} type="text" onChange={handleChange}/>
+        {
+           isToggle ? (
+           <button onClick={handleSubmit}>Add Item</button>
+           ) :
+          (
+            <button onClick={handleSubmit}>Update Item</button>
+          )
+        } 
     </div>
   )
 }

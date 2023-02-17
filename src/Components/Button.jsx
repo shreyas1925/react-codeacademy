@@ -14,12 +14,13 @@ const Button = ({styles,setCount,count,type,name}) => {
                 {
                     setCount(0)
                 }
+            }else if(type==='res')
+            {
+                setCount(0)
             }
     }
     return (
-        <div>
             <button className={styles} onClick={handleCount}>{name}</button>
-        </div>
     )
 }
 
